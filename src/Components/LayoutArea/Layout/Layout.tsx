@@ -19,7 +19,7 @@ function Layout(): JSX.Element {
 
             <Switch>
                 <Route path="/books" component={BooksList} exact/>
-                <Route path="add-book" component={AddBook} exact/>
+                <Route path="/add-book" component={AddBook} exact/>
                 <Redirect from="/" to="/books" exact />
             </Switch>
         </div>

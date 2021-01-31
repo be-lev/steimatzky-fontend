@@ -18,7 +18,7 @@ export function bookDownloadedAction(books: BookModel[]): BooksAction {
     return { type: BooksActionType.BooksDownloaded, payload: books }
 }
 
-export function bookAddedAction(book: BookModel[]): BooksAction {
+export function bookAddedAction(book: BookModel): BooksAction {
     return { type: BooksActionType.BookAdded, payload: book }
 }
 
