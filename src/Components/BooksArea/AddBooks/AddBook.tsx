@@ -36,9 +36,8 @@ function AddBooks(): JSX.Element {
         book
       );
       const addedBook = response.data;
-
+console.log(addedBook);
       const action = bookAddedAction(addedBook);
-
       store.dispatch(action);
       alert("Book ID: " + addedBook.bookId + "has been successfully added");
 
@@ -76,8 +75,9 @@ function AddBooks(): JSX.Element {
 <label>Stock:</label> <br/>
 <input type="number" name="stock" ref={register}/>
 <br/><br/>
-</form>
 <button>Add</button>
+</form>
+
   </div>;
 }
 
