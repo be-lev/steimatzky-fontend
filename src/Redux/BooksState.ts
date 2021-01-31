@@ -14,15 +14,15 @@ export interface BooksAction {
     payload?: any;
 }
 
-export function BookDownloadedAction(books: BookModel[]): BooksAction {
+export function bookDownloadedAction(books: BookModel[]): BooksAction {
     return { type: BooksActionType.BooksDownloaded, payload: books }
 }
 
-export function BookAddedAction(book: BookModel[]): BooksAction {
+export function bookAddedAction(book: BookModel[]): BooksAction {
     return { type: BooksActionType.BookAdded, payload: book }
 }
 
-export function BooksReducer(currentState: BooksState = new BooksState(), action: BooksAction): BooksState{
+export function booksReducer(currentState: BooksState = new BooksState(), action: BooksAction): BooksState{
     const newState = {...currentState};
 
     switch ( action.type) {
